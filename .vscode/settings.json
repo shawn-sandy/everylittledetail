@@ -42,5 +42,11 @@
   "cSpell.words": [
     "lenna"
   ],
-  "conventionalCommits.lineBreak": "\\n"
+  "conventionalCommits.lineBreak": "\\n",
+  "markdownlint.config": {
+    "MD028": false,
+    "MD025": {
+      "front_matter_title": ""
+    }
+  }
 }
