@@ -1,5 +1,5 @@
 {
-  "title": "Substack",
+  "title": "Every Little Detail",
   "subtitle": "A performance first, accessibility focussed custom theme built on FP.Pages & 11ty.",
   "url": "https://server.dev",
   "description": "Design, Code, Performance, Usability, Accessibility",
@@ -11,7 +11,7 @@
     "id": "https://server.dev/"
   },
   "author": {
-    "name": "john hannock",
+    "name": "Every Litle Detail",
     "email": "name@mail.dev",
     "twitter": "@shawnsandy"
   },

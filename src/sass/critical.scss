@@ -76,3 +76,13 @@ footer[role='contentinfo'] {
     justify-content: center;
   }
 }
+
+body > section,
+body > main {
+  width: 85%;
+  max-width: calc(1400rem / 16);
+  @media (min-width: 980px) {
+    width: 80%;
+    max-width: calc(1380rem / 16);
+  }
+}
