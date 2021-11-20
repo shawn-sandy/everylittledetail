@@ -59,6 +59,9 @@ header {
       width: 100%;
       gap: 1rem;
       align-items: flex-start;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
     }
   }
 }
