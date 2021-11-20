@@ -5,12 +5,12 @@ number of items, words - word count #}
 3, words = 200) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) |
 reverse -%}
-    <section style="margin: 3rem auto"> <div role="list">
+    <section style="margin: 3rem auto" class="featured"> <div role="list">
       {%- for item in feature %}
         <div role="listitem">
           {% if item.data.image %}
             <picture>
-              <img loading="lazy" src="{{ hlp.sharp.coverImage(item.data.coverImage) }}" alt="{{ item.data.title | slug }}" width="500" height="300"/>
+              <img loading="lazy" src="{{ hlp.sharp.coverImage(item.data.image) }}" alt="{{ item.data.title | slug }}" width="500" height="300"/>
             </picture>
           {% endif %}
           <section>
@@ -24,17 +24,17 @@ reverse -%}
               {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |
     truncate(300) | safe }}
             </p>
+            {% if item.url %}
+              <p>
+                <a href="{{ item.url }}" role="button">
+                  <em>
+                    Continue Reading
+                    <i class="ti ti-arrow-right"></i>
+                  </em>
+                </a>
+              </p>
+            {% endif %}
           </section>
-          {% if item.url %}
-            <p>
-              <a href="{{ item.url }}" role="button">
-                <em>
-                  Continue Reading
-                  <i class="ti ti-arrow-right"></i>
-                </em>
-              </a>
-            </p>
-          {% endif %}
         </div>
       {%- endfor %}
     </div>

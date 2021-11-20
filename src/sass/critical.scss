@@ -6,19 +6,18 @@ body > main,
 body > header > section,
 body > footer > section,
 nav {
-  @media (min-width: 980px) {
-    width: 85% !important;
-    max-width: calc(1500rem / 16) !important;
-  }
-  @media (min-width: 1600px) {
-    width: 80%;
-    // max-width: calc(1500rem / 16) !important;
-  }
+  width: 100%;
 }
 
 body > header {
   padding: 0 0 3rem !important;
   background-size: cover;
+  nav {
+    background-color: #bce3b9;
+    :any-link {
+      color: rgb(0, 5, 0);
+    }
+  }
 }
 
 p + * {
@@ -75,5 +74,15 @@ footer[role='contentinfo'] {
   nav {
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+body > section,
+body > main {
+  width: 85%;
+  max-width: calc(1400rem / 16);
+  @media (min-width: 980px) {
+    width: 80%;
+    max-width: calc(1380rem / 16);
   }
 }
