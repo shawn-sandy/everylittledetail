@@ -50,11 +50,11 @@ header {
     }
   }
 }
+
 body {
   > section,
   main,
-  header > section,
-  footer {
+  header > section {
     max-width: calc(1300rem / 16);
   }
 }
@@ -65,10 +65,24 @@ body {
     [role='listitem'] {
       flex-direction: row;
       width: 100%;
-      gap: 1rem;
+      gap: 3rem;
       align-items: flex-start;
       &:nth-child(even) {
         flex-direction: row-reverse;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      @media (min-width: 980px) {
+        img {
+          width: calc(580rem / 16);
+        }
       }
     }
   }
