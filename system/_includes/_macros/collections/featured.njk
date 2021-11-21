@@ -10,12 +10,12 @@ reverse -%}
         <div role="listitem">
           {% if item.data.image %}
             <picture>
-              <img loading="lazy" src="{{ hlp.sharp.coverImage(item.data.coverImage) }}" alt="{{ item.data.title | slug }}" width="500" height="300"/>
+              <img loading="lazy" src="{{ hlp.sharp.coverImage(item.data.image) }}" alt="{{ item.data.title | slug }}" width="500" height="300"/>
             </picture>
           {% endif %}
           <section>
             <h4>
-              <a href="{{ item.url }}" title="{{ item.data.title }}">
+              <a href="{{ item.url }}" title="{{ item.data.title }}" class= "services">
                 <i class="{{ item.data.icon }}"></i>
                 {{ item.data.title }}
               </a>
@@ -78,7 +78,7 @@ tag - tag, limit - number of items #}
             <a href="" title="{{ item.data.title | slug }}">
               {% if item.data.image %}
                 <picture>
-                  <img loading="lazy" src="{{ item.data.image }}" alt="Image" width="500" height="300"/>
+                  <img loading="lazy" src="{{ item.data.image }}" alt="Image" width="400" height="200"/>
                 </picture>
               {% else %}
                 <h3>
