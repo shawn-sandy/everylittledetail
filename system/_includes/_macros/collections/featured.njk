@@ -70,8 +70,8 @@ tag - tag, limit - number of items #}
 {%- macro postImages(tag = 'posts', limit
 = 3) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
-  <section style="margin: 2rem 0">
-    <span>
+  <section style="margin: 2rem 0;" >
+    <span style="background-color: 83dcdd;">
       <ul role="list">
         {%- for item in feature %}
           <li role="listitem">
