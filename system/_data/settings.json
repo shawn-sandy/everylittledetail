@@ -1,8 +1,8 @@
 {
   "title": "Every Little Detail",
-  "subtitle": "A performance first, accessibility focussed custom theme built on FP.Pages & 11ty.",
+  "subtitle": "",
   "url": "https://server.dev",
-  "description": "Design, Code, Performance, Usability, Accessibility",
+  "description": "",
   "logo_url": "/images/substack-logo.svg",
   "feed": {
     "subtitle": "",
@@ -16,7 +16,5 @@
     "twitter": "@shawnsandy"
   },
   "styles": [],
-  "scripts": [
-    "./js/min/index.min.js"
-  ]
+  "scripts": ["./js/min/index.min.js"]
 }
