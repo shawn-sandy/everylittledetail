@@ -18,6 +18,10 @@ body > header {
       color: rgb(0, 5, 0);
     }
   }
+  > section {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 p + * {
@@ -25,7 +29,7 @@ p + * {
 }
 
 picture + * {
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 pre,
@@ -36,12 +40,12 @@ textarea[role='presentation'] {
 
 .fp-grid [role='list'],
 section [role='list'] {
-  padding: 0;
+  padding: 2rem;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between !important;
-  margin: auto;
+  margin: 1rem;
   @media (min-width: 1600px) {
     width: auto;
   }
@@ -64,8 +68,8 @@ section [role='list'] [role='listitem'] {
 }
 
 [role='listitem'] > section {
-  flex: 2rem;
-  margin-bottom: 2rem;
+  flex: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer[role='contentinfo'] {

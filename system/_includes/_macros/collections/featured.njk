@@ -5,7 +5,7 @@ number of items, words - word count #}
 3, words = 200) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) |
 reverse -%}
-    <section style="margin: 3rem auto" class="featured"> <div role="list">
+    <section style="margin: 1rem auto" class="featured"> <div role="list">
       {%- for item in feature %}
         <div role="listitem">
           {% if item.data.image %}
@@ -21,8 +21,9 @@ reverse -%}
               </a>
             </h4>
             <p>
-              {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |
-    truncate(300) | safe }}
+              {# {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |
+    truncate(300) | safe }} #}
+    {{ item.templateContent | safe }}
             </p>
             {% if item.url %}
               <p>

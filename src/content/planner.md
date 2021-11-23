@@ -5,6 +5,13 @@ date: 2021-06-08
 image: ['party.jpeg']
 ---
 
-![{{ title }}]({{ hlp.sharp.img(['placeholder.png']) }})
+<article>
+<p>
+Planning is where the heavy lifting begins, we take your ideas and bring them to life. Our event professionals handle the logistics of the planning process so you can focus on the fun stuff. Booking appointments/site visits, fine-tuning the budget and so on. You let us know what you want, and we do our best to make it happen.
+</p>
+<p>
+Rate: $900.00 + 10% service charge.
+</p>
+<p>* Note: Pricing is subject to change based on the event.</p>
 
-Phosfluorescently extend error-free value for interoperable outsourcing. Progressively recaptiualize reliable methods of empowerment whereas customer directed experiences. Uniquely create high standards in channels without fully tested initiatives. Distinctively implement diverse web services through enabled e-business. Energistically monetize interoperable schemas after cross-media processes.
+</article>

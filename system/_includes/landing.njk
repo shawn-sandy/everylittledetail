@@ -1,6 +1,6 @@
 {% extends "base.njk" %}
 {% block cover %}
-  <section>
+  <section style="max-width: 100%; width: 100%">
     <h3 role="presentation">
       <i class="ti ti-grain"></i>
       {{ settings.subtitle }}
@@ -15,3 +15,4 @@
   {{ feature.featured('projects', 3) }}
   {{ super() }}
 {% endblock %}
+<hr>
