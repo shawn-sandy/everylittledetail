@@ -2,7 +2,7 @@
 title: 'Book our consultant'
 subtitle: 'We love our clients, our goal is to help every you plan the perfect event! Our consultations helps you get every little detail right.'
 
-image: ['ladyGlitter.jpeg']
+image: ['mood.jpeg']
 ---
 
 <article>
