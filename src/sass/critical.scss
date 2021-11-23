@@ -13,7 +13,8 @@ body > header {
   padding: 0 0 3rem !important;
   background-size: cover;
   nav {
-    background-color: #bce3b9;
+    background-color: #b3ece1;
+    filter: drop-shadow(5px 5px 5px #373837);
     :any-link {
       color: rgb(0, 5, 0);
     }
