@@ -91,3 +91,7 @@ body > main {
     max-width: calc(1380rem / 16);
   }
 }
+
+.featured img[alt] {
+  width: calc(680rem / 16);
+}

@@ -1,19 +1,18 @@
 {% extends "base.njk" %}
 {% block cover %}
-  <section style="max-width: 100%; width: 100%">
-    <img src= "images/pinkfloralhero.jpeg" alt= "pink table setting"><img>
-    {#<h3 role="presentation">
-      <i class="ti ti-grain"></i>
-      {{ settings.subtitle }}
-    </h3>
-    <blockquote class="title-font">
-      {{ settings.description }} #}
-    </blockquote>
-  </section>
-  {# {% include "partials/hero.njk" %} #}
-{% endblock %}
-{% block content %}
-  {{ feature.featured('projects', 3) }}
-  {{ super() }}
-{% endblock %}
-<hr>
+  <section style="max-width: 100%; width: 100%; padding-inline: 0; padding-block: 0 60px">
+    <img src="images/pinkfloralhero.jpeg" alt="pink table setting">
+      <img>
+        {#<h3 role="presentation">
+                                              <i class="ti ti-grain"></i>
+                                              {{ settings.subtitle }}
+                                            </h3>
+                                            <blockquote class="title-font">
+                                              {{ settings.description }} #}
+      </blockquote>
+    </section>
+    {# {% include "partials/hero.njk" %} #}
+  {% endblock %}
+  {% block content %}
+    {{ feature.featured('projects', 3) }}
+  {% endblock %}

@@ -80,6 +80,7 @@ body {
       width: 100%;
       gap: 3rem;
       align-items: center;
+      padding-block: 3rem;
       &:nth-child(even) {
         flex-direction: row-reverse;
       }
@@ -99,4 +100,8 @@ body {
       }
     }
   }
+}
+
+section.featured {
+  max-width: calc(1400rem / 16);
 }

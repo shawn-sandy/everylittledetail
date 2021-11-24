@@ -22,14 +22,14 @@ reverse -%}
             </h4>
             <p>
               {# {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |
-                  truncate(300) | safe }} #}
+                                              truncate(300) | safe }} #}
               {{ item.templateContent | safe }}
             </p>
             {% if item.url %}
               <p>
-                <a href="{{ item.url }}" role="button">
+                <a href="/bookings" role="button">
                   <em>
-                    Continue Reading
+                    Book us now
                     <i class="ti ti-arrow-right"></i>
                   </em>
                 </a>
