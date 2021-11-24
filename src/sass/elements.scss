@@ -31,7 +31,7 @@ strong {
   }
 
   blockquote {
-    padding: 3rem 0;
+    padding: 0rem 0;
   }
 }
 
@@ -49,6 +49,9 @@ header {
       width: 100%;
     }
   }
+  > section {
+    width: 100%;
+  }
 }
 
 body {
@@ -58,7 +61,17 @@ body {
     max-width: calc(1300rem / 16);
   }
 }
-
+.services {
+  text-decoration: none;
+  font-family: 'Merienda One', cursive;
+  font-size: 2rem;
+}
+.contact {
+  margin: 3rem;
+}
+.social {
+  margin: 3rem;
+}
 .featured {
   [role='list'] {
     flex-direction: column;
@@ -67,6 +80,7 @@ body {
       width: 100%;
       gap: 3rem;
       align-items: center;
+      padding-block: 3rem;
       &:nth-child(even) {
         flex-direction: row-reverse;
       }
@@ -86,4 +100,8 @@ body {
       }
     }
   }
+}
+
+section.featured {
+  max-width: calc(1400rem / 16);
 }
