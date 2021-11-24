@@ -61,9 +61,12 @@ body {
     max-width: calc(1300rem / 16);
   }
 }
+.merriweather {
+  font-family: 'Merriweather', serif;
+}
 .services {
   text-decoration: none;
-  font-family: 'Merienda One', cursive;
+  font-family: 'Merriweather', serif;
   font-size: 2rem;
 }
 .contact {
@@ -104,4 +107,34 @@ body {
 
 section.featured {
   max-width: calc(1400rem / 16);
+}
+footer {
+  align-items: center;
+  background-color: #83dcdd;
+  border-top: thick solid #00c6cf !important;
+}
+footer[role='contentinfo'] section {
+  input,
+  textarea {
+    background-color: #fff;
+    border: none !important;
+  }
+
+  button {
+    background-color: #00c6cf;
+    color: #fff;
+    border: none !important;
+    border-radius: 99rem;
+    &:hover {
+      background-color: darken(#00b5b5, 15%) !important;
+    }
+  }
+}
+
+body > header nav {
+  background-color: white !important;
+  filter: none;
+  @media (min-width: 980px) {
+    padding-inline: 10%;
+  }
 }

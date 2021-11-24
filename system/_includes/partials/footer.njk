@@ -1,43 +1,44 @@
 <footer
   role="contentinfo" class="dark-bg text-light">
   {# <div class="text-center" style="text-align: center">
-      <nav>
-        <section>
-          <span>
-            <ul>
-              {% include "partials/nav-list.njk" %}
-            </ul>
-          </span>
-        </section>
-      </nav>
-    </div> #}
-    <section >
-      <div class= "contact">
-        <h4 align= "center">Have a question? <br> Contact us using the form below. </h4>
+              <nav>
+                <section>
+                  <span>
+                    <ul>
+                      {% include "partials/nav-list.njk" %}
+                    </ul>
+                  </span>
+                </section>
+              </nav>
+            </div> #}
+  <section>
+    <div class="contact">
+      <h4 align="center">Have a question?
+        <br>
+          Contact us using the form below.
+        </h4>
         {% include "partials/contact.njk" %}
       </div>
-
       <div class="social">
-        <h4 align= "center">Follow us on social media.</h4>
-        <p>
-          <a href="#" ><img src="images/facebook.png"><img> facebook page</a>
-          </p>
-          <p>
-        <a href="#" ><img src="images/instagram.png"><img> Instagram page</a>
+        <h4 align="center">Follow us on social media.</h4>
+        <p style="text-align: center">
+          <a href="#"><img src="images/facebook.png"/> </a>
+          <a href="#"><img src="images/instagram.png"/> </a>
         </p>
-        </div>
+      </div>
     </section>
-  <div>
-    <section>
-      <p>
-        Copyright &copy; {{ hlp.11ty.year() }}
-        {{ settings.author.name }} All rights reserved
-      </p>
-    </section>
-  </div>
-  {% if env.node_env == 'development' %}
-    <div style="text-align: center">
-      <p>NODE ENV {{ env.node_env }}</p>
+    <div>
+      <section>
+        <p>
+          Copyright &copy; {{ hlp.11ty.year() }}
+          {{ settings.author.name }} All rights reserved
+        </p>
+      </section>
     </div>
-  {% endif %}
-</footer>
+    {% if env.node_env == 'development' %}
+      <div style="text-align: center">
+        <p>NODE ENV {{ env.node_env }}</p>
+      </div>
+    {% endif %}
+  </footer>
+</p>
