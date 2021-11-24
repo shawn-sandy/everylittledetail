@@ -31,7 +31,7 @@ strong {
   }
 
   blockquote {
-    padding: 3rem 0;
+    padding: 0rem 0;
   }
 }
 
@@ -63,8 +63,15 @@ body {
 }
 .services {
   text-decoration: none;
+  font-family: 'Merienda One', cursive;
+  font-size: 2rem;
 }
-
+.contact {
+  margin: 3rem;
+}
+.social {
+  margin: 3rem;
+}
 .featured {
   [role='list'] {
     flex-direction: column;
