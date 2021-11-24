@@ -1,8 +1,8 @@
 {
-  "title": "Substack",
-  "subtitle": "A performance first, accessibility focussed custom theme built on FP.Pages & 11ty.",
+  "title": "Every Little Detail",
+  "subtitle": "",
   "url": "https://server.dev",
-  "description": "Design, Code, Performance, Usability, Accessibility",
+  "description": "",
   "logo_url": "/images/substack-logo.svg",
   "feed": {
     "subtitle": "",
@@ -11,12 +11,10 @@
     "id": "https://server.dev/"
   },
   "author": {
-    "name": "john hannock",
+    "name": "Every Litle Detail",
     "email": "name@mail.dev",
     "twitter": "@shawnsandy"
   },
   "styles": [],
-  "scripts": [
-    "./js/min/index.min.js"
-  ]
+  "scripts": ["./js/min/index.min.js"]
 }

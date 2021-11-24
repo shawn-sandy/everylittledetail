@@ -1,12 +1,13 @@
 {% extends "base.njk" %}
 {% block cover %}
-  <section>
-    <h3 role="presentation">
+  <section style="max-width: 100%; width: 100%">
+    <img src= "images/pinkfloralhero.jpeg" alt= "pink table setting"><img>
+    {#<h3 role="presentation">
       <i class="ti ti-grain"></i>
       {{ settings.subtitle }}
     </h3>
     <blockquote class="title-font">
-      {{ settings.description }}
+      {{ settings.description }} #}
     </blockquote>
   </section>
   {# {% include "partials/hero.njk" %} #}
@@ -15,3 +16,4 @@
   {{ feature.featured('projects', 3) }}
   {{ super() }}
 {% endblock %}
+<hr>
