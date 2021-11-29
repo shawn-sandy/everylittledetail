@@ -2,7 +2,7 @@
 title: 'Book our day of Event Co-ordinator'
 subtitle: 'when you book a day of Co-ordinator, you can trust us to keep the party running smoothly, while you and all your guest enjoy the event.'
 date: 2021-06-08
-image: ['cord.jpeg']
+image: ['evecord.jpeg']
 ---
 
 <article>
