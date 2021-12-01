@@ -1,5 +1,5 @@
 ---
-title: 'Book our consultant'
+title: 'Professional consultations'
 subtitle: 'We love our clients, our goal is to help every you plan the perfect event! Our consultations helps you get every little detail right.'
 
 image: ['birthday.jpeg']

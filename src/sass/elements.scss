@@ -7,6 +7,10 @@
 
 a[role='button'] > em {
   filter: contrast(1.15);
+  background-color: #879bd0;
+  color: #020202;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 header > section[role='banner'] {
@@ -66,8 +70,9 @@ body {
 }
 .services {
   text-decoration: none;
-  font-family: 'Merriweather', serif;
-  font-size: 2rem;
+  text-decoration-color: #6c69a6 !important;
+  font-family: 'Port Lligat Slab', serif;
+  font-size: 2.25rem;
 }
 .contact {
   margin: 3rem;
@@ -111,8 +116,8 @@ section.featured {
 }
 footer {
   align-items: center;
-  background-color: #83dcdd;
-  border-top: thick solid #00c6cf !important;
+  background-color: #879bd0;
+  border-top: thick solid #414141 !important;
 }
 footer[role='contentinfo'] section {
   input,
@@ -122,15 +127,15 @@ footer[role='contentinfo'] section {
   }
 
   button {
-    background-color: #00c6cf;
+    background-color: #000000;
     color: #fff;
     border: none !important;
     border-radius: 99rem;
-    color: #000;
-    font-size: 1.2rem;
+    color: #dfdfdf;
+    font-size: 1rem;
     font-family: merriweather, serif;
     &:hover {
-      background-color: darken(#00b5b5, 15%) !important;
+      background-color: darken(#6b6b6b, 15%) !important;
     }
   }
 }
