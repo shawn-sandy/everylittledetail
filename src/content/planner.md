@@ -5,7 +5,7 @@ date: 2021-06-08
 image: ['plannercp.jpeg']
 ---
 
-<article>
+<article >
 <p>
 Planning is where the heavy lifting begins, we take your ideas and bring them to life. Our event professionals handle the logistics of the planning process so you can focus on the fun stuff. Booking appointments/site visits, fine-tuning the budget and so on. You let us know what you want, and we do our best to make it happen.
 </p>

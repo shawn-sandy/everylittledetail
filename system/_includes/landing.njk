@@ -1,7 +1,7 @@
 {% extends "base.njk" %}
 {% block cover %}
   <section style="max-width: 100%; width: 100%; padding-inline: 0; padding-block: 0 10px">
-    <img src="images/wallcp.jpeg" alt="pink table setting">
+    <img src="images/wallcp.jpeg" alt="decorated wedding wall">
       <img>
         {#<h3 role="presentation">
                                               <i class="ti ti-grain"></i>
@@ -11,10 +11,12 @@
                                               {{ settings.description }} #}
       </blockquote>
 
-    </section>
+    </section >
+
     {# {% include "partials/hero.njk" %} #}
   {% endblock %}
   {% block content %}
     {{ feature.featured('projects', 3) }}
+
   {% endblock %}
 

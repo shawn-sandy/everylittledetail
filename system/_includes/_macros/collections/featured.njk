@@ -14,11 +14,10 @@ reverse -%}
             </picture>
           {% endif %}
           <section>
-            <h4>
-              <a href="{{ item.url }}" title="{{ item.data.title }}" class="services">
-                <i class="{{ item.data.icon }}"></i>
+            <h4 class="services">
+
                 {{ item.data.title }}
-              </a>
+              
             </h4>
             <p>
               {# {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |

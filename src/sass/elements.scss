@@ -7,8 +7,8 @@
 
 a[role='button'] > em {
   filter: contrast(1.15);
-  background-color: #879bd0;
-  color: #020202;
+  background-color: #2f130e;
+  color: #e4e4e4;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -59,6 +59,7 @@ header {
 }
 
 body {
+  background-color: #fdf9f9;
   > section,
   main,
   header > section {
@@ -69,9 +70,8 @@ body {
   font-family: 'Merriweather', serif;
 }
 .services {
-  text-decoration: none;
-  text-decoration-color: #6c69a6 !important;
-  font-family: 'Port Lligat Slab', serif;
+  font-color: #d0ecf1 !important;
+  font-family: 'Noto Serif', cursive;
   font-size: 2.25rem;
 }
 .contact {
@@ -112,12 +112,13 @@ body {
 }
 
 section.featured {
+  background-width: 100%;
   max-width: calc(1400rem / 16);
 }
 footer {
+  background-color: #d0ecf1 !important;
   align-items: center;
-  background-color: #879bd0;
-  border-top: thick solid #414141 !important;
+  border-top: thick #000000;
 }
 footer[role='contentinfo'] section {
   input,
@@ -141,8 +142,9 @@ footer[role='contentinfo'] section {
 }
 
 body > header nav {
-  background-color: white !important;
+  background-color: #d0ecf1 !important;
   filter: none;
+
   @media (min-width: 980px) {
     padding-inline: 10%;
   }
