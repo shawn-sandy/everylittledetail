@@ -158,3 +158,9 @@ body > header nav {
   max-width: 100% !important;
   max-height: 100% !important;
 }
+.featured [role='list'] [role='listitem'],
+.featured [role='list'] [role='listitem']:nth-child(even) {
+  @media (max-width: calc(980rem / 16)) {
+    flex-direction: column;
+  }
+}
