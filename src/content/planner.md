@@ -1,5 +1,5 @@
 ---
-title: Exceptional event planning
+title: Detailed event planning
 subtitle: 'Sit back, relax and little us take care of every little detail for you event. our team is here to make make your dreams come true'
 date: 2021-06-08
 image: ['plannercp.jpeg']

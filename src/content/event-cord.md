@@ -1,5 +1,5 @@
 ---
-title: 'Day of event co-ordinators'
+title: 'Day of event co-ordination'
 subtitle: 'when you book a day of Co-ordinator, you can trust us to keep the party running smoothly, while you and all your guest enjoy the event.'
 date: 2021-06-08
 image: ['evecord.jpeg']

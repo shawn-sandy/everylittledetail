@@ -62,7 +62,7 @@
     {% import "_macros/nav.njk" as nav with context %}
     {% include "partials/calarity.njk" %}
   </head>
-  <body class="page-{{ page.fileSlug or 'home' }}">
+  <body class="page-{{ page.fileSlug or 'home' }} "  >
     <header class=" header-{{ page.fileSlug or 'home' }}" style="border: none">
       {% block header %}
         {% include "partials/nav.njk" %}
