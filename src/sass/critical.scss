@@ -1,6 +1,26 @@
 @use '@shawnsandy/first-paint/src/styles/critical.scss';
 @use 'theme/custom/index.scss';
 
+html {
+  font-size: var(--page-fs, 100%);
+
+  @media screen and (max-width: calc(768rem / 16)) {
+    font-size: var(--page-fs-xs, 82%);
+  }
+
+  @media screen and (max-width: calc(992rem / 16)) and (min-width: calc(768rem / 16)) {
+    font-size: var(--page-fs-sm, 87%);
+  }
+
+  @media screen and (max-width: calc(1280rem / 16)) and (min-width: calc(992rem / 16)) {
+    font-size: var(--page-fs-md, 90%);
+  }
+
+  @media screen and (max-width: calc(1400rem / 16)) and (min-width: calc(1280rem / 16)) {
+    font-size: var(--page-fs-lg, 95%);
+  }
+}
+
 body > section,
 body > main,
 body > header > section,

@@ -167,3 +167,27 @@ body > header nav {
 .header-about > section {
   min-height: 500px;
 }
+
+.landing-cover {
+  font-family: Merriweather, serif;
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 0 10px;
+  background-image: url(/images/wallcp.jpg);
+  background-size: cover;
+  min-height: calc(550rem / 16);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  > div {
+    width: 100%;
+    text-align: center;
+    margin-block: 4rem 0;
+    padding: 2rem 4rem;
+    color: rgba(8, 8, 8, 0.8);
+    background-color: rgba(255, 255, 255, 0.55);
+    // border-radius: 0.5rem;
+  }
+}

@@ -1,6 +1,6 @@
 {
   "title": "Every Little Detail",
-  "subtitle": "",
+  "subtitle": "A subtitle here",
   "url": "https://server.dev",
   "description": "",
   "logo_url": "/images/substack-logo.svg",
@@ -16,5 +16,7 @@
     "twitter": "@shawnsandy"
   },
   "styles": [],
-  "scripts": ["./js/min/index.min.js"]
+  "scripts": [
+    "./js/min/index.min.js"
+  ]
 }
