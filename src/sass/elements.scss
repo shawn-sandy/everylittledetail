@@ -157,3 +157,13 @@ body > header nav {
   min-height: 700px;
   background-position: top center;
 }
+.featured [role='list'] [role='listitem'],
+.featured [role='list'] [role='listitem']:nth-child(even) {
+  @media (max-width: calc(980rem / 16)) {
+    flex-direction: column;
+  }
+}
+
+.header-about > section {
+  min-height: 500px;
+}
