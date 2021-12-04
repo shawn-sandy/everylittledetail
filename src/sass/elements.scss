@@ -7,8 +7,8 @@
 
 a[role='button'] > em {
   filter: contrast(1.15);
-  background-color: #2d647c;
-  color: #ffffff;
+  background-color: #b0c798;
+  color: #000000;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -59,7 +59,7 @@ header {
 }
 
 body {
-  background-image: url('/images/abstract.svg');
+  background-image: url('/images/ABSTRACT.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -74,7 +74,6 @@ body {
   font-family: 'Merriweather', serif;
 }
 .services {
-  font-color: #d0ecf1 !important;
   font-family: 'Noto Serif', cursive;
   font-size: 2.25rem;
 }
@@ -120,7 +119,7 @@ section.featured {
   max-width: calc(1400rem / 16);
 }
 footer {
-  background-color: #d0ecf1 !important;
+  background-color: #d1dbc7 !important;
   align-items: center;
   border-top: thick #000000;
 }
@@ -146,7 +145,7 @@ footer[role='contentinfo'] section {
 }
 
 body > header nav {
-  background-color: #d0ecf1 !important;
+  background-color: #d1dbc7 !important;
   filter: none;
 
   @media (min-width: 980px) {
@@ -155,6 +154,6 @@ body > header nav {
 }
 .header-about {
   background-image: url('/images/simtab.jpg');
-  max-width: 100% !important;
-  max-height: 100% !important;
+  min-height: 700px;
+  background-position: top center;
 }
