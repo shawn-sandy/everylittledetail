@@ -1,9 +1,9 @@
 {
-  "title": "Every Little Detail",
-  "subtitle": "A subtitle here",
+  "title": "Every Little Detail ",
+  "subtitle": "A one stop shop for all your event needs.",
   "url": "https://server.dev",
   "description": "",
-  "logo_url": "/images/substack-logo.svg",
+  "logo_url": "/images/eldlogo.png",
   "feed": {
     "subtitle": "",
     "filename": "feed.xml",
@@ -16,7 +16,5 @@
     "twitter": "@shawnsandy"
   },
   "styles": [],
-  "scripts": [
-    "./js/min/index.min.js"
-  ]
+  "scripts": ["./js/min/index.min.js"]
 }

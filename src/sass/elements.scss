@@ -145,27 +145,46 @@ footer[role='contentinfo'] section {
 }
 
 body > header nav {
-  background-color: #d1dbc7 !important;
+  background-color: #ffffff !important;
   filter: none;
 
   @media (min-width: 980px) {
     padding-inline: 10%;
   }
 }
-.header-about {
-  background-image: url('/images/simtab.jpg');
-  min-height: 700px;
-  background-position: top center;
-}
+
 .featured [role='list'] [role='listitem'],
 .featured [role='list'] [role='listitem']:nth-child(even) {
   @media (max-width: calc(980rem / 16)) {
     flex-direction: column;
   }
 }
+.header-about {
+  min-height: 500px;
+}
 
 .header-about > section {
-  min-height: 500px;
+  font-family: Merriweather, serif;
+  min-height: calc(550rem / 16);
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 0 10px;
+  background-image: url(/images/simtab.webp);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  > div {
+    width: 100%;
+    text-align: center;
+    margin-block: 6rem 0;
+    padding: 2rem 4rem;
+    color: rgba(8, 8, 8, 0.8);
+    background-color: rgba(255, 255, 255, 0.55);
+    // border-radius: 0.5rem;
+  }
 }
 
 .landing-cover {
@@ -184,7 +203,7 @@ body > header nav {
   > div {
     width: 100%;
     text-align: center;
-    margin-block: 4rem 0;
+    margin-block: 6rem 0;
     padding: 2rem 4rem;
     color: rgba(8, 8, 8, 0.8);
     background-color: rgba(255, 255, 255, 0.55);

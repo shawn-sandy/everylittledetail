@@ -2,12 +2,14 @@
 <!-- hide cover page -->
 {% block cover %}
   <section class="bg-section" style="img">
-    <h3 role="presentation">
+    <div class="cover-content">
+      <img src= "/images/eldlogo.png"><img>
+    <h4 role="presentation">
       <i class="ti ti-grain"></i>
       {{ settings.subtitle }}
-    </h3>
-    <blockquote class="title-font">
-      {{ subtitle or settings.description }}
+    </h4>
+   
+      </div>
     </blockquote>
   {% endblock %}
   {% block content %}
