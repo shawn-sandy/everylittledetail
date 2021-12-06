@@ -8,7 +8,7 @@
       {# -------------- #}
       <article>
         {% if title %}
-          <h2 role="presentation ">{{ title }}</h2>
+          <h4 role="presentation ">{{ title }}</h4>
           {% if showDate %}
             <time datetime="{{ page.date }}">
               <i class="ti ti-calendar-event"></i>
@@ -21,10 +21,7 @@
         </p>
       </article>
     </section>
-    <aside>
-      {% include "partials/sidebar.njk" %}
-    </aside>
-  </main>
+     </main>
 {% endblock %}
 {% block footer %}
   {{ super() }}

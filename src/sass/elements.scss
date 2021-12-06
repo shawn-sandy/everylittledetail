@@ -71,7 +71,7 @@ body {
   }
 }
 .merriweather {
-  font-family: 'Merriweather', serif;
+  font-family: 'Noto Serif', cursive;
 }
 .services {
   font-family: 'Noto Serif', cursive;
@@ -209,4 +209,41 @@ body > header nav {
     background-color: rgba(255, 255, 255, 0.55);
     // border-radius: 0.5rem;
   }
+}
+
+.header-book {
+  min-height: 500px;
+}
+
+.header-book > section {
+  font-family: Merriweather, serif;
+  min-height: calc(550rem / 16);
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 0 10px;
+  background-image: url(/images/pinkflower.webp);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  > div {
+    width: 100%;
+    text-align: center;
+    margin-block: 6rem 0;
+    padding: 2rem 4rem;
+    color: rgba(8, 8, 8, 0.8);
+    background-color: rgba(255, 255, 255, 0.55);
+    // border-radius: 0.5rem;
+  }
+}
+
+.schedule {
+  width: cover;
+  text-align: center;
+  margin-block: 6rem 0;
+  padding: 2rem 4rem;
+  color: rgba(8, 8, 8, 0.8);
+  background-color: rgba(255, 255, 255, 0.55);
 }
