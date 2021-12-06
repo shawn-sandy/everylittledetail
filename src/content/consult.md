@@ -1,8 +1,7 @@
 ---
-title: 'Book our consultant'
+title: 'Design + Planning consultation'
 subtitle: 'We love our clients, our goal is to help every you plan the perfect event! Our consultations helps you get every little detail right.'
-
-image: ['mood-min.jpeg']
+image: ['picmood.jpg']
 ---
 
 <article>
