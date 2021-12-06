@@ -8,12 +8,9 @@
       {# -------------- #}
       <article>
         {% if title %}
-          <h4 role="presentation ">{{ title }}</h4>
+          <h4 role="presentation " class= "merriweather" >{{ title }}</h4>
           {% if showDate %}
-            <time datetime="{{ page.date }}">
-              <i class="ti ti-calendar-event"></i>
-              {{ hlp.11ty.timeAgo(page.date) }}
-            </time>
+            
           {% endif %}
         {% endif %}
         <p>
