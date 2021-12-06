@@ -1,51 +1,53 @@
 <footer
-  role="contentinfo" class="dark-bg text-light" >
+  role="contentinfo" class="dark-bg text-light">
   {# <div class="text-center" style="text-align: center">
-                  <nav>
-                    <section>
-                      <span>
-                        <ul>
-                          {% include "partials/nav-list.njk" %}
-                        </ul>
-                      </span>
-                    </section>
-                  </nav>
-                </div> #}
+                        <nav>
+                          <section>
+                            <span>
+                              <ul>
+                                {% include "partials/nav-list.njk" %}
+                              </ul>
+                            </span>
+                          </section>
+                        </nav>
+                      </div> #}
   <section>
     <div class="contact merriweather">
-      <h4 align="center">Have a question?
+      <h4 style="text-align: center">Have a question?
         <br>
           Contact us using the form below.
         </h4>
         {% include "partials/contact.njk" %}
       </div>
       <div class="social merriweather">
-        <h4 align="center">Follow us on social media.</h4>
+        <h4 style="text-align: center">Follow us on social media.</h4>
         <p style="text-align: center">
           <a href="#"><img src="/images/facebook.png" alt="facebooklink" style="padding: 2rem"/>
           </a>
           <a href="#"><img src="/images/instagram.png" style="padding: 2rem"/>
           </a>
         </p>
-        <h4 align="center"> Contact us</h4>
-        <p class= "social merriweather" style="text-align: center">
-          <h5 style = " padding:0 0 0 10rem;" align="left">Email: eld.events.tt@gmail.com </h5>
-          <h5 style = " padding:0 0 0 10rem;" align="left">Phone: 868-321-3879</h5>
+        <h4 style="text-align: center">
+          Contact us</h4>
+        <p class="social merriweather" style="text-align: center">
+          <h5 style="text-align: center">Email: eld.events.tt@gmail.com
+          </h5>
+          <h5 style="text-align: center">Phone: 868-321-3879</h5>
         </p>
       </div>
     </section>
     <div style="background-color: #000000 ;">
-      <section >
-        <p >
+      <section>
+        <p>
           Copyright &copy; {{ hlp.11ty.year() }}
           {{ settings.author.name }} All rights reserved
         </p>
       </section>
     </div>
     {#{% if env.node_env == 'development' %}
-      <div style="text-align: center">
-        <p>NODE ENV {{ env.node_env }}</p>
-      </div>
-    {% endif %}#}
+                  <div style="text-align: center">
+                    <p>NODE ENV {{ env.node_env }}</p>
+                  </div>
+                {% endif %}#}
   </footer>
 </p>
