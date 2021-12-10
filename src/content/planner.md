@@ -7,11 +7,10 @@ image: ['planner.webp']
 
 <article >
 <p>
-Planning is where the heavy lifting begins, we take your ideas and bring them to life. Our event professionals handle the logistics of the planning process so you can focus on the fun stuff. Booking appointments/site visits, fine-tuning the budget and so on. You let us know what you want, and we do our best to make it happen.
+Planning is where the heavy lifting begins, we take your ideas and bring them to life. Our event professionals handle the logistics of the planning process so you can focus on the fun stuff. We book appointments/site visits, fine-tune the budget and much more. You let us know what you want, and we do our best to make it happen.
 </p>
 <p>
 Service Fee: $900.00 + 10% service charge.
 </p>
-<p>* Note: Pricing is subject to change based on the event.</p>
 
 </article>
