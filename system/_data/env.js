@@ -8,7 +8,7 @@ module.exports = {
   contact_success: process.env.CONTACT_SUCCESS || '/thank-you',
   form_provider: process.env.FORM_PROVIDER || null,
   url: process.env.URL || null,
-  developer_mode: process.env.DEVELOPER_MODE || true,
+  developer_mode: process.env.DEVELOPER_MODE || false,
   recaptcha_key: process.env.RECAPTCHA_KEY || null,
   repository: process.env.REPOSITORY_URL || 'https://github.com/shawn-sandy/shawnsandy-dev'
 
