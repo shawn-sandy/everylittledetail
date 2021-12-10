@@ -1,32 +1,53 @@
 @use '@shawnsandy/first-paint/src/styles/critical.scss';
 @use 'theme/custom/index.scss';
 
+html {
+  font-size: var(--page-fs, 100%);
+
+  @media screen and (max-width: calc(768rem / 16)) {
+    font-size: var(--page-fs-xs, 82%);
+  }
+
+  @media screen and (max-width: calc(992rem / 16)) and (min-width: calc(768rem / 16)) {
+    font-size: var(--page-fs-sm, 87%);
+  }
+
+  @media screen and (max-width: calc(1280rem / 16)) and (min-width: calc(992rem / 16)) {
+    font-size: var(--page-fs-md, 90%);
+  }
+
+  @media screen and (max-width: calc(1400rem / 16)) and (min-width: calc(1280rem / 16)) {
+    font-size: var(--page-fs-lg, 95%);
+  }
+}
+
 body > section,
 body > main,
 body > header > section,
 body > footer > section,
 nav {
-  @media (min-width: 980px) {
-    width: 85% !important;
-    max-width: calc(1500rem / 16) !important;
-  }
-  @media (min-width: 1600px) {
-    width: 80%;
-    // max-width: calc(1500rem / 16) !important;
-  }
+  width: 100%;
 }
 
 body > header {
-  padding: 0 0 3rem !important;
+  padding: 0 0 0rem !important;
   background-size: cover;
+  nav {
+    :any-link {
+      color: rgb(0, 5, 0);
+    }
+  }
+  > section {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 p + * {
   margin-top: 1.5rem !important;
 }
-
 picture + * {
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 pre,
@@ -37,12 +58,12 @@ textarea[role='presentation'] {
 
 .fp-grid [role='list'],
 section [role='list'] {
-  padding: 0;
+  padding: 0rem;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between !important;
-  margin: auto;
+  margin: 0rem;
   @media (min-width: 1600px) {
     width: auto;
   }
@@ -65,8 +86,8 @@ section [role='list'] [role='listitem'] {
 }
 
 [role='listitem'] > section {
-  flex: 2rem;
-  margin-bottom: 2rem;
+  flex: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer[role='contentinfo'] {
@@ -76,4 +97,18 @@ footer[role='contentinfo'] {
     flex-direction: column;
     justify-content: center;
   }
+}
+
+body > section,
+body > main {
+  width: 85%;
+  max-width: calc(1400rem / 16);
+  @media (min-width: 980px) {
+    width: 80%;
+    max-width: calc(1380rem / 16);
+  }
+}
+
+.featured img[alt] {
+  width: calc(680rem / 16);
 }

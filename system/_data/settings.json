@@ -1,9 +1,9 @@
 {
-  "title": "Substack",
-  "subtitle": "",
+  "title": "Every Little Detail ",
+  "subtitle": "A one stop shop for all your event needs.",
   "url": "https://server.dev",
   "description": "",
-  "logo_url": "/images/homelogo.svg",
+  "logo_url": "/images/eldlogo.png",
   "feed": {
     "subtitle": "",
     "filename": "feed.xml",
@@ -11,8 +11,8 @@
     "id": "https://server.dev/"
   },
   "author": {
-    "name": "john hannock",
-    "email": "name@mail.dev",
+    "name": "Every Little Detail",
+    "email": "eld.events.tt@gmail.com",
     "twitter": "@shawnsandy"
   },
   "styles": [],
