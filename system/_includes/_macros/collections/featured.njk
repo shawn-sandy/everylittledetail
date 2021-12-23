@@ -10,26 +10,25 @@ reverse -%}
         <div role="listitem">
           {% if item.data.image %}
             <picture>
-              <img loading="lazy" src="{{ hlp.sharp.coverImage(item.data.image) }}" alt="{{ item.data.title | slug }}" width="600" height="400"/>
+              <img loading="lazy" src="{{ hlp.sharp.coverImage(item.data.image) }}" alt="{{ item.data.title | slug }}" width="500" height="300"/>
             </picture>
           {% endif %}
           <section>
-            <h4>
-              <a href="{{ item.url }}" title="{{ item.data.title }}" class= "services">
-                <i class="{{ item.data.icon }}"></i>
+            <h4 class="services">
+
                 {{ item.data.title }}
-              </a>
+
             </h4>
             <p>
               {# {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |
-    truncate(300) | safe }} #}
-    {{ item.templateContent | safe }}
+                                              truncate(300) | safe }} #}
+              {{ item.templateContent | safe }}
             </p>
             {% if item.url %}
               <p>
-                <a href="{{ item.url }}" role="button">
+                <a href="/pages/book" role="button">
                   <em>
-                    Continue Reading
+                    Get started with a consultation
                     <i class="ti ti-arrow-right"></i>
                   </em>
                 </a>
@@ -64,6 +63,7 @@ reverse -%}
       </ul>
     </span>
   </section>
+
 {%- endmacro -%}
 {# display a list with image/links or title #}
 {# attributes
@@ -71,7 +71,7 @@ tag - tag, limit - number of items #}
 {%- macro postImages(tag = 'posts', limit
 = 3) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
-  <section style="margin: 2rem 0;" >
+  <section style="margin: 2rem 0;">
     <span style="background-color: 83dcdd;">
       <ul role="list">
         {%- for item in feature %}
@@ -96,3 +96,4 @@ tag - tag, limit - number of items #}
     </span>
   </section>
 {%- endmacro -%}
+

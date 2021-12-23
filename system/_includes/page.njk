@@ -1,18 +1,20 @@
 {% extends "base.njk" %}
 <!-- hide cover page -->
 {% block cover %}
-  <section class="bg-section" style="">
-    <h3 role="presentation">
+  <section class="bg-section" style="img">
+    <div class="cover-content">
+      <img src= "/images/eldlogo.png"><img>
+    <h4 role="presentation">
       <i class="ti ti-grain"></i>
       {{ settings.subtitle }}
-    </h3>
-    <blockquote class="title-font">
-      {{ subtitle or settings.description }}
+    </h4>
+
+      </div>
     </blockquote>
   {% endblock %}
   {% block content %}
     {{ super() }}
-    <section>
+    {# <section>
       <p style="margin-bottom: 3rem">
         <small>
           <a href="{{ env.repository }}/blob/main/{{ page.inputPath }}" target="_blank" rel="noopener nofollower" role="button">
@@ -22,5 +24,5 @@
           </a>
         </small>
       </p>
-    </section>
+    </section> #}
   {% endblock %}

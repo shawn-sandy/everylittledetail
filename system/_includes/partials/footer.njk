@@ -1,43 +1,53 @@
 <footer
   role="contentinfo" class="dark-bg text-light">
   {# <div class="text-center" style="text-align: center">
-      <nav>
-        <section>
-          <span>
-            <ul>
-              {% include "partials/nav-list.njk" %}
-            </ul>
-          </span>
-        </section>
-      </nav>
-    </div> #}
-    <section >
-      <div class= "contact">
-        <h4 align= "center">Have a question? <br> Contact us using the form below. </h4>
+                              <nav>
+                                <section>
+                                  <span>
+                                    <ul>
+                                      {% include "partials/nav-list.njk" %}
+                                    </ul>
+                                  </span>
+                                </section>
+                              </nav>
+                            </div> #}
+  <section>
+    <div class="contact merriweather">
+      <h4 style="text-align: center">Have a question?
+        <br>
+          Contact us using the form below.
+        </h4>
         {% include "partials/contact.njk" %}
       </div>
-
-      <div class="social">
-        <h4 align= "center">Follow us on social media.</h4>
-        <p>
-          <a href="#" ><img src="images/facebook.png"><img> facebook page</a>
-          </p>
-          <p>
-        <a href="#" ><img src="images/instagram.png"><img> Instagram page</a>
+      <div class="social merriweather">
+        <h4 style="text-align: center">Follow us on social media.</h4>
+        <p style="text-align: center">
+          <a href="https://www.facebook.com/profile.php?id=100070950702294" target="blank"><img src="/images/facebook.png" alt="facebooklink" style="padding: 2rem"/>
+          </a>
+          <a href="https://www.instagram.com/eld.events.ltd/" target="blank"><img src="/images/instagram.png" style="padding: 2rem"/>
+          </a>
         </p>
-        </div>
+                <p class= "social merriweather" style="text-align: center">
+                  <h4 align="center" > Contact us</h4>
+          <h5 style="text-align: center;"> Email: eld.events.tt@gmail.com </h5>
+          <h5 style = "text-align: center;"> Phone: 868-321-3879</h5>
+          <h5 style = "text-align:center;"> Mon to Fri: 9 a.m. to 4 p.m.</h5>
+        </p>
+      </div>
+      {# comment #}
     </section>
-  <div>
-    <section>
-      <p>
-        Copyright &copy; {{ hlp.11ty.year() }}
-        {{ settings.author.name }} All rights reserved
-      </p>
-    </section>
-  </div>
-  {% if env.node_env == 'development' %}
-    <div style="text-align: center">
-      <p>NODE ENV {{ env.node_env }}</p>
+    <div style="background-color: #000000 ;">
+      <section>
+        <p>
+          Copyright &copy; {{ hlp.11ty.year() }}
+          {{ settings.author.name }} All rights reserved
+        </p>
+      </section>
     </div>
-  {% endif %}
-</footer>
+    {#{% if env.node_env == 'development' %}
+                              <div style="text-align: center">
+                                <p>NODE ENV {{ env.node_env }}</p>
+                              </div>
+                            {% endif %}#}
+  </footer>
+</p>

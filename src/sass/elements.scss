@@ -7,6 +7,10 @@
 
 a[role='button'] > em {
   filter: contrast(1.15);
+  background-color: #b0c798;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 header > section[role='banner'] {
@@ -55,16 +59,23 @@ header {
 }
 
 body {
+  background-image: url('/images/ABSTRACT.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
   > section,
   main,
   header > section {
     max-width: calc(1300rem / 16);
   }
 }
+.merriweather {
+  font-family: 'Noto Serif', cursive;
+}
 .services {
-  text-decoration: none;
-  font-family: 'Merienda One', cursive;
-  font-size: 2rem;
+  font-family: 'Noto Serif', cursive;
+  font-size: 2.25rem;
 }
 .contact {
   margin: 3rem;
@@ -76,10 +87,12 @@ body {
   [role='list'] {
     flex-direction: column;
     [role='listitem'] {
+      font-size: 0.92rem;
       flex-direction: row;
       width: 100%;
       gap: 3rem;
-      align-items: flex-start;
+      align-items: center;
+      padding-block: 3rem;
       &:nth-child(even) {
         flex-direction: row-reverse;
       }
@@ -98,5 +111,185 @@ body {
         }
       }
     }
+  }
+}
+
+section.featured {
+  background-width: 100%;
+  max-width: calc(1400rem / 16);
+}
+footer {
+  background-color: #d1dbc7 !important;
+  align-items: center;
+  border-top: thick #000000;
+}
+footer[role='contentinfo'] section {
+  input,
+  textarea {
+    background-color: #fff;
+    border: none !important;
+  }
+
+  button {
+    background-color: #000000;
+    color: #fff;
+    border: none !important;
+    border-radius: 99rem;
+    color: #dfdfdf;
+    font-size: 1rem;
+    font-family: merriweather, serif;
+    &:hover {
+      background-color: darken(#6b6b6b, 15%) !important;
+    }
+  }
+}
+
+body > header nav {
+  background-color: #ffffff !important;
+  filter: none;
+
+  @media (min-width: 980px) {
+    padding-inline: 10%;
+  }
+}
+
+.featured [role='list'] [role='listitem'],
+.featured [role='list'] [role='listitem']:nth-child(even) {
+  @media (max-width: calc(980rem / 16)) {
+    flex-direction: column;
+  }
+}
+.header-about {
+  min-height: 500px;
+}
+
+.header-about > section {
+  font-family: Merriweather, serif;
+  min-height: calc(550rem / 16);
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 0 10px;
+  background-image: url(/images/lights.webp);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  > div {
+    width: 100%;
+    text-align: center;
+    margin-block: 6rem 0;
+    padding: 2rem 4rem;
+    color: rgba(8, 8, 8, 0.8);
+    background-color: rgba(255, 255, 255, 0.55);
+    // border-radius: 0.5rem;
+  }
+}
+
+.landing-cover {
+  font-family: Merriweather, serif;
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 0 10px;
+  background-image: url(/images/wallcrop.webp);
+  background-size: cover;
+  min-height: calc(550rem / 16);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  > div {
+    width: 100%;
+    text-align: center;
+    margin-block: 6rem 0;
+    padding: 2rem 4rem;
+    color: rgba(8, 8, 8, 0.8);
+    background-color: rgba(255, 255, 255, 0.55);
+    // border-radius: 0.5rem;
+  }
+}
+
+.header-book {
+  min-height: 500px;
+}
+
+.header-book > section {
+  font-family: Merriweather, serif;
+  min-height: calc(550rem / 16);
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 0 10px;
+  background-image: url(/images/pinkflower.webp);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  > div {
+    width: 100%;
+    text-align: center;
+    margin-block: 6rem 0;
+    padding: 2rem 4rem;
+    color: rgba(8, 8, 8, 0.8);
+    background-color: rgba(255, 255, 255, 0.55);
+    // border-radius: 0.5rem;
+  }
+}
+
+.schedule {
+  width: cover;
+  text-align: center;
+  margin-block: 6rem 0;
+  padding: 2rem 4rem;
+  color: rgba(8, 8, 8, 0.8);
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.bio {
+  + .bio {
+    margin-top: 3rem;
+  }
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: flex-start;
+  .photo {
+    min-width: calc(400rem / 16);
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  @media (max-width: calc(980rem / 16)) {
+    flex-direction: column;
+  }
+}
+.header-thank-you {
+  min-height: 500px;
+}
+
+.header-thank-you > section {
+  font-family: Merriweather, serif;
+  min-height: calc(550rem / 16);
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 0 10px;
+  background-image: url(/images/thankyou.webp);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  > div {
+    width: 100%;
+    text-align: center;
+    margin-block: 6rem 0;
+    padding: 2rem 4rem;
+    color: rgba(8, 8, 8, 0.8);
+    background-color: rgba(255, 255, 255, 0.55);
+    // border-radius: 0.5rem;
   }
 }
