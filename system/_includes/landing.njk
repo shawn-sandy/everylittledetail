@@ -3,15 +3,15 @@
   <section class="landing-cover">
     <div class="cover-content">
       <div>
-     <img src = "/images/eldlogo.png" ><img>
-      </div>
-      <h4 class= " merriweather" >
-        {{ settings.subtitle }}
-      </h4>
-    </div>
-  </section>
-  {# {% include "partials/hero.njk" %} #}
-{% endblock %}
-{% block content %}
-  {{ feature.featured('projects', 3) }}
-{% endblock %}
+        <img src="/images/eldlogo.png" width="250" height="170">
+          <img></div>
+          <h4 class=" merriweather">
+            {{ settings.subtitle }}
+          </h4>
+        </div>
+      </section>
+      {# {% include "partials/hero.njk" %} #}
+    {% endblock %}
+    {% block content %}
+      {{ feature.featured('projects', 3) }}
+    {% endblock %}
