@@ -76,7 +76,7 @@
     {% endif %}
     {%- if showRecaptcha and env.form_provider ===
     "web3forms" %}
-      <script src="https://www.google.com/recaptcha/api.js?render={{ env.recaptcha_key or 'key-not-found' }}"></script>
+      <script src="https://www.google.com/recaptcha/api.js?render={{ env.recaptcha_key or 'key-not-found' }}" defer></script>
       <script>
         grecaptcha.ready(function () {
           grecaptcha.execute("{{ env.recaptcha_key }}", {action: "contact"}).then(function (token) {
