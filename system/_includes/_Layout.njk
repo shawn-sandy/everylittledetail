@@ -27,10 +27,10 @@
       {# css #}
       <style>
         {{css | cssmin | safe}}</style>
-      <link rel="stylesheet" href="/css/styles.css" media="all"/>
+      <link rel="stylesheet" href="/css/styles.css" rel="stylesheet" rel="preload" as="font" media="all"/>
       <link rel="stylesheet" href="/css/elements.css" media="all"/>
       {% for styles in settings.styles %}
-        <link href="{{ styles }}" rel="stylesheet" media="all"/>
+        <link href="{{ styles }}" rel="stylesheet" rel="stylesheet" rel="preload" as="font" media="all"/>
       {% endfor %}
       {% if stylesheets %}
         {% for style in stylesheets %}
