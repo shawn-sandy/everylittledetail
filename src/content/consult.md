@@ -1,6 +1,7 @@
 ---
 title: 'Design &  Planning consultation'
 subtitle: 'We love our clients, our goal is to help every you plan the perfect event! Our consultations helps you get every little detail right.'
+date: 2021-06-08
 image: ['picmood.jpg']
 ---
 
