@@ -1,6 +1,7 @@
 ---
 title: 'Where there is love there is life'
 subtitle: 'Did someone say fun date?'
+date: 2022-01-08
 image: ['vdayad.jpg']
 ---
 
