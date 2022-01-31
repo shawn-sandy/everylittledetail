@@ -330,8 +330,9 @@ body > header nav {
   margin-bottom: 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   max-height: 400px 300px;
+  border-radius: 15px;
   width: auto;
-  padding: 16px;
+  padding: 10 px;
   text-align: center;
   > p {
     width: 100%;
@@ -340,6 +341,7 @@ body > header nav {
     font-size: 0.95rem;
     padding: 1rem 4rem;
     color: rgba(8, 8, 8, 0.8);
+    border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.55);
     // border-radius: 0.5rem;
   }
