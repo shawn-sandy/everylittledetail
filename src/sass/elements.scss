@@ -195,7 +195,7 @@ body > header nav {
   width: 100%;
   padding-inline: 0;
   padding-block: 0 10px;
-  background-image: url(/images/redheader.webp);
+  background-image: url(/images/wallcrop.webp);
   background-size: cover;
   min-height: calc(550rem / 16);
   display: flex;
@@ -208,7 +208,7 @@ body > header nav {
     margin-block: 6rem 0;
     padding: rem 4rem;
     color: rgba(8, 8, 8, 0.8);
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.45);
     // border-radius: 0.5rem;
   }
 }
